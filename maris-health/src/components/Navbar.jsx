@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from 'react-router-dom'
 
 import SignedinLinks from "./SignedinLinks"
+import SignedoutLinks from "./SignedoutLinks"
 
 const Navbar = () => {
     return (
@@ -9,6 +10,7 @@ const Navbar = () => {
             <div className="container">
                 <Link to ='/' className="brand-logo">MarisHealth</Link>
                 <SignedinLinks/>
+                <SignedoutLinks/>
             </div>
 
         </nav>
